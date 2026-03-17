@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter --version 2>&1 | head -5)",
+      "Bash(pip --version 2>&1)",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry\" && python -m venv backend/venv)",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry\" && flutter create --project-name elghamry_pharmacy frontend 2>&1 | tail -5)",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry\" && source backend/venv/Scripts/activate && pip install django djangorestframework django-cors-headers pillow 2>&1 | tail -5)",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry\" && source backend/venv/Scripts/activate && django-admin startproject pharmacy_backend backend/ 2>&1)",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry/backend\" && source venv/Scripts/activate && python manage.py startapp pharmacy 2>&1)",
+      "Bash(source \"/c/Users/Dell/Desktop/el ghamry/backend/venv/Scripts/activate\" && pip freeze > \"/c/Users/Dell/Desktop/el ghamry/backend/requirements.txt\")",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry/frontend\" && flutter pub get 2>&1 | tail -5)",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry/backend\" && source venv/Scripts/activate && python manage.py migrate 2>&1)",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry/backend\" && source venv/Scripts/activate && python manage.py makemigrations pharmacy && python manage.py migrate 2>&1)",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry/backend\" && source venv/Scripts/activate && python manage.py check 2>&1)",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry/frontend\" && flutter pub get 2>&1 | tail -3)",
+      "Bash(cd \"/c/Users/Dell/Desktop/el ghamry/frontend\" && dart run flutter_launcher_icons 2>&1)",
+      "Bash(code:*)",
+      "Bash(where code:*)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/Dell/AppData/Local/Programs/Microsoft VS Code//**)",
+      "Bash(\"/c/Users/Dell/AppData/Local/Programs/Microsoft VS Code/Code.exe\" --version)",
+      "Bash(\"/c/Users/Dell/AppData/Local/Programs/Microsoft VS Code/bin/code\" --version)",
+      "Bash(psql:*)",
+      "Bash(\"/c/Program Files/PostgreSQL/17/bin/psql\" --version 2>&1)",
+      "Bash(source venv/Scripts/activate)",
+      "Bash(pip install:*)",
+      "Bash(\"C:/Program Files/PostgreSQL/17/bin/psql\" -U postgres -c \"CREATE DATABASE elghamry_pharmacy;\" 2>&1)",
+      "Bash(\"C:/Program Files/PostgreSQL/17/bin/psql\" -U postgres -c \"SELECT 1;\" 2>&1)",
+      "Bash(\"C:/Program Files/PostgreSQL/17/bin/psql\" -U postgres -c \"ALTER USER postgres PASSWORD 'postgres';\" 2>&1)",
+      "Bash(flutter run:*)"
+    ]
+  }
+}
