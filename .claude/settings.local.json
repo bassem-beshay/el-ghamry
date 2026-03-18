@@ -28,7 +28,15 @@
       "Bash(\"C:/Program Files/PostgreSQL/17/bin/psql\" -U postgres -c \"CREATE DATABASE elghamry_pharmacy;\" 2>&1)",
       "Bash(\"C:/Program Files/PostgreSQL/17/bin/psql\" -U postgres -c \"SELECT 1;\" 2>&1)",
       "Bash(\"C:/Program Files/PostgreSQL/17/bin/psql\" -U postgres -c \"ALTER USER postgres PASSWORD 'postgres';\" 2>&1)",
-      "Bash(flutter run:*)"
+      "Bash(flutter run:*)",
+      "Bash(python -c \"from backend.pharmacy.seed_data.products import PRODUCTS; print\\(f''Total products: {len\\(PRODUCTS\\)}''\\); cats = set\\(p[''category''] for p in PRODUCTS\\); print\\(f''Categories \\({len\\(cats\\)}\\):''\\); [print\\(f''  - {c}''\\) for c in sorted\\(cats\\)]\")",
+      "Bash(python -c \"from backend.pharmacy.seed_data.products import PRODUCTS; print\\(len\\(PRODUCTS\\)\\); print\\(len\\(set\\(p[''category''] for p in PRODUCTS\\)\\)\\)\")",
+      "Bash(python manage.py seed_db)",
+      "Bash(PYTHONIOENCODING=utf-8 python manage.py seed_db)",
+      "Bash(PYTHONIOENCODING=utf-8 python -c \"from pharmacy.seed_data.products import PRODUCTS; [print\\(p[''name'']\\) for p in PRODUCTS]\")",
+      "Bash(gh --version)",
+      "Bash(gh auth:*)",
+      "Bash(flutter analyze:*)"
     ]
   }
 }

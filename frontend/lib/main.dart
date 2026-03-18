@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/home_screen.dart' as screens;
 
 const Color kBlue = Color(0xFF1565C0);
 const Color kWhite = Colors.white;
@@ -90,7 +91,7 @@ class _SplashScreenState extends State<SplashScreen> {
       if (mounted) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (_) => const HomeScreen()),
+          MaterialPageRoute(builder: (_) => const screens.HomeScreen()),
         );
       }
     });
@@ -127,27 +128,4 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Directionality(
-      textDirection: TextDirection.rtl,
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('صيدلية الغمري'),
-        ),
-        body: const Center(
-          child: Text(
-            'مرحبا بك في صيدلية الغمري',
-            style: TextStyle(
-              fontSize: 22,
-              color: kBlack,
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
+// HomeScreen is now in screens/home_screen.dart
